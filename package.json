@@ -1,0 +1,19 @@
+{
+  "name": "backbone-models-react-native",
+  "version": "0.0.1",
+  "description": "A fork of Backbone.JS without Views or Routers or jquery to work with react native",
+  "main": "backbone.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coggle/backbone-models-react-native.git"
+  },
+  "author": "Andy Pritchard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Coggle/backbone-models-react-native/issues"
+  },
+  "homepage": "https://github.com/Coggle/backbone-models-react-native#readme"
+}
