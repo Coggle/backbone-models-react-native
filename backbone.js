@@ -1273,7 +1273,9 @@ Backbone.ajax = function(options) {
   request.ontimeout = onError;
   request.onerror = onError;
   request.open(options.type, options.url);
+  Backbone.trigger('pre_request', request);
   request.send();
+  return request;
 };
 
 
