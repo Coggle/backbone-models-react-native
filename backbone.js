@@ -1257,11 +1257,11 @@ Backbone.ajax = function(options) {
   function onLoad() {
     var status = request.status;
     if ( status >= 200 && status < 300 || status === 304 ) {
+      var json = undefined;
       try {
-        options.success(JSON.parse(request.responseText));
-      } catch(e) {
-        options.error(request);
-      }
+        json = JSON.parse(request.responseText);
+      } catch(e) {}
+      options.success(json);
     } else {
       options.error(request);
     }
