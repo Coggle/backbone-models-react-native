@@ -1274,7 +1274,12 @@ Backbone.ajax = function(options) {
   request.onerror = onError;
   request.open(options.type, options.url);
   Backbone.trigger('pre_request', request);
-  request.send();
+  if ((["PUT", "POST", "PATCH"].indexOf(options.type.toUpperCase()) !== -1) && options.data) {
+    request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    request.send(options.data);
+  } else {
+    request.send();
+  }
   return request;
 };
 
