@@ -1,6 +1,6 @@
 {
   "name": "backbone-models-react-native",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A fork of Backbone.JS without Views or Routers or jquery to work with react native",
   "main": "backbone.js",
   "scripts": {
